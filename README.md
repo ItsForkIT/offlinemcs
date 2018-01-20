@@ -28,10 +28,10 @@ Make a DMS/sync folder outside the offlineMCS store the file in this format
 
 ## Config
 
-** 1 : SYNC_URL **
+1 : SYNC_URL 
 
 `offlinemcs/offlineMCS/settings.py` set URL `SYNC_URL = os.path.abspath(BASE_DIR + "/../< sync_folder >/")`
 
-** 2 : MEDIA_ROOT Folder **
+2 : MEDIA_ROOT Folder
 
 `offlinemcs/offlineMCS/settings.py` set folder `MEDIA_ROOT = '../< media_root_folder >/'` 
