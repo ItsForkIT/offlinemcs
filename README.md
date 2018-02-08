@@ -1,22 +1,18 @@
 # OfflineMCS
 
-## Forks
-
+## Installation
+Python 2 only; Python 3 is not supported yet.
 ```
-git clone https://github.com/ItsForkIT/offlinemcs.git
-
-```
-
-## Installation steps :
-```
-$ sudo pip2 install -r requirements.txt
-$ python manage.py runserver
+$ git clone https://github.com/ItsForkIT/offlinemcs.git
+$ cd offlinemcs/
+$ sudo pip install -r requirements.txt
+$ python manage.py runserver 0.0.0.0:8000
 
 ```
 ![Installation steps](img/offlineMCS.gif)
 
 
-## Setting the Sync Folder 
+## Setting up the Sync Folder 
 
 ```
 
@@ -26,7 +22,7 @@ Make a DMS/sync folder outside the offlineMCS store the file in this format
 
 ```
 
-## Config
+## Further Configuration
 
 1 : SYNC_URL 
 
@@ -34,4 +30,8 @@ Make a DMS/sync folder outside the offlineMCS store the file in this format
 
 2 : MEDIA_ROOT Folder
 
-`offlinemcs/offlineMCS/settings.py` set folder `MEDIA_ROOT = '../< media_root_folder >/'` 
+`offlinemcs/offlineMCS/settings.py` set folder `MEDIA_ROOT = '../< media_root_folder >/'`
+
+3 : Map Tiles Folder
+
+`offlinemcs/static/map/tiles` Store *.topojson tiles 
